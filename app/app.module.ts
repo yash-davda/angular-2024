@@ -9,6 +9,8 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TempRefVariablesComponent } from './temp-ref-variables/temp-ref-variables.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { TempRefVariablesComponent } from './temp-ref-variables/temp-ref-variabl
     ClassBindingComponent,
     StyleBindingComponent,
     EventBindingComponent,
-    TempRefVariablesComponent
+    TempRefVariablesComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
