@@ -18,9 +18,15 @@
 </ng-template>-->
 
 <!--Now we learn about ngSwitch-->
-<div [ngSwitch]="color">
+<!--<div [ngSwitch]="color">
   <p *ngSwitchCase="'red'">You picked red color</p>
   <p *ngSwitchCase="'blue'">You picked blue color</p>
   <p *ngSwitchCase="'pink'">You picked pink color</p>
   <p *ngSwitchDefault>You picked wrong</p>
+</div>-->
+
+
+<!--Now we learn about ngFor-->
+<div *ngFor="let color of colors; index as i">
+  {{i+1}} - {{color}}
 </div>
