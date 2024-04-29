@@ -9,6 +9,7 @@ export class StructuralDirectiveComponent implements OnInit {
 
   constructor() { }
   isVisiable: boolean = false;
+  color: string = 'pink';
   ngOnInit(): void {
   }
 

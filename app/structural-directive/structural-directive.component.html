@@ -9,10 +9,18 @@
 </ng-template>-->
 
 <!--Now *ngif with then and else-->
-<h2 [class.txt-center]="isVisiable" *ngIf="isVisiable;then thenBlock; else elseBlock"></h2>
+<!--<h2 [class.txt-center]="isVisiable" *ngIf="isVisiable;then thenBlock; else elseBlock"></h2>
 <ng-template #thenBlock>
   <h2 class="txt-center">Hello Yash Davda</h2>
 </ng-template>
 <ng-template #elseBlock>
 <h2 class="txtcentercolor">Har Har Mahadev</h2>
-</ng-template>
+</ng-template>-->
+
+<!--Now we learn about ngSwitch-->
+<div [ngSwitch]="color">
+  <p *ngSwitchCase="'red'">You picked red color</p>
+  <p *ngSwitchCase="'blue'">You picked blue color</p>
+  <p *ngSwitchCase="'pink'">You picked pink color</p>
+  <p *ngSwitchDefault>You picked wrong</p>
+</div>
