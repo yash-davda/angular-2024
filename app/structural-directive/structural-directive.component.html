@@ -1,0 +1,18 @@
+<!--This is normal *ngif use-->
+<!--<h2 [class.txt-center]="isVisiable" *ngIf="isVisiable">Hello Yash Davda</h2>-->
+
+<!--Now *ngif with else-->
+<!--<h2 [class.txt-center]="isVisiable" *ngIf="isVisiable; else elseBlock">Hello Yash Davda</h2>
+
+<ng-template #elseBlock>
+<h2 class="txtcentercolor">Har Har Mahadev</h2>
+</ng-template>-->
+
+<!--Now *ngif with then and else-->
+<h2 [class.txt-center]="isVisiable" *ngIf="isVisiable;then thenBlock; else elseBlock"></h2>
+<ng-template #thenBlock>
+  <h2 class="txt-center">Hello Yash Davda</h2>
+</ng-template>
+<ng-template #elseBlock>
+<h2 class="txtcentercolor">Har Har Mahadev</h2>
+</ng-template>
