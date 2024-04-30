@@ -13,6 +13,7 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { FormsModule } from '@angular/forms';
 import { StructuralDirectiveComponent } from './structural-directive/structural-directive.component';
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ComponentInteractionComponent } from './component-interaction/component
     TempRefVariablesComponent,
     TwoWayBindingComponent,
     StructuralDirectiveComponent,
-    ComponentInteractionComponent
+    ComponentInteractionComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
