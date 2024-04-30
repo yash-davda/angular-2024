@@ -12,6 +12,7 @@ import { TempRefVariablesComponent } from './temp-ref-variables/temp-ref-variabl
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
 import { StructuralDirectiveComponent } from './structural-directive/structural-directive.component';
+import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { StructuralDirectiveComponent } from './structural-directive/structural-
     EventBindingComponent,
     TempRefVariablesComponent,
     TwoWayBindingComponent,
-    StructuralDirectiveComponent
+    StructuralDirectiveComponent,
+    ComponentInteractionComponent
   ],
   imports: [
     BrowserModule,

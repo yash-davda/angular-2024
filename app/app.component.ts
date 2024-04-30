@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularLearning';
+  public name = "Yash";
+  public variable: number = 10;
 }
