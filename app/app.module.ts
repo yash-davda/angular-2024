@@ -14,6 +14,9 @@ import { FormsModule } from '@angular/forms';
 import { StructuralDirectiveComponent } from './structural-directive/structural-directive.component';
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmplouyeeDetailsComponent } from './emplouyee-details/emplouyee-details.component';
+import { EmployeeServiceService } from './employee-service.service';
 
 @NgModule({
   declarations: [
@@ -27,14 +30,16 @@ import { PipesComponent } from './pipes/pipes.component';
     TwoWayBindingComponent,
     StructuralDirectiveComponent,
     ComponentInteractionComponent,
-    PipesComponent
+    PipesComponent,
+    EmployeeListComponent,
+    EmplouyeeDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [EmployeeServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
