@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-component-interaction',
@@ -9,8 +10,11 @@ export class ComponentInteractionComponent implements OnInit {
 
   @Input('parentName') public childName: any;
   @Input('variableNum') public childVariable: number | undefined;
+  @Output() public childEvent = new EventEmitter();
   constructor() { }
   ngOnInit(): void {
   }
-
+  fyreEvent() {
+    this.childEvent.emit('Hey Yash Davda');
+  }
 }
